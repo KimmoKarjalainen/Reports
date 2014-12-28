@@ -37,7 +37,9 @@ $(function () {
             useHTML: true,
             headerFormat: '<td style="color: {series.color}">{series.name}: </td><table>',
             pointFormat: '<tr><td style="text-align: right"><b>{point.y}</td><td style="text-align: left">(%)</b></td></tr>' + 
-                '<tr><td style="text-align: right"><b>{point.x}</td><td style="text-align: left">€/vuosi</b></td></tr>',
+			'<tr><td style="text-align: right">{point.z:,0f}</td><td style="text-align: left">nuoresta</b></td></tr>' +
+			'<tr><td style="text-align: right">Alueen</td><td style="text-align: left">keskitulot</b></td></tr>' +
+                	'<tr><td style="text-align: right"><b>{point.x:,0f}</td><td style="text-align: left">€/vuosi</b></td></tr>',
             footerFormat: '</table>',
             valueDecimals: 2
         },
