@@ -19,17 +19,20 @@ $(function () {
         title: {
             text: 'Kasvatus- ja perheneuvonnan 0-17-vuotiaat varsinaiset asiakkaat 2013 keskitulojen mukaan Helsingin suurpiireittäin'
         },
-		xAxis: {
+        subtitle: {
+            text: 'Lähde: Sosiaali- ja terveysvirasto; Lastensuojelun vuositilastot.<br>Lähde: Tilastokeskus, Tulo- ja varallisuustilasto alkaen 2001'
+        },
+	xAxis: {
             title: {
                 text: 'Keskitulo 2012'
             }
         },
-		yAxis: {
+	yAxis: {
             title: {
                 text: '%:ia 0-17-v. väestöstä'
             }
         },
-		tooltip: {
+	tooltip: {
             shared: true,
             useHTML: true,
             headerFormat: '<td style="color: {series.color}">{series.name}: </td><table>',
